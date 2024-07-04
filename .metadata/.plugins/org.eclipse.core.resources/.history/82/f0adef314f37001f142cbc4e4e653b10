@@ -1,0 +1,8 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -llibc.a -l"C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Device/UCD3138A/Linker/cyclone_A_headers.cmd" -l"C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Device/UCD3138A/Linker/cyclone_A.cmd"
+
