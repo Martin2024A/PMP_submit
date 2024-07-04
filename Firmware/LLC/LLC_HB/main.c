@@ -82,16 +82,16 @@ void main()
 	//Initialize ADC12
 	init_adc12();
 	//Initialize over voltage protection
-//	init_ovp();
+	init_ovp();
 	//Initialize under voltage protection
-//	init_uvp();
+	init_uvp();
 	//Initial fault mux
-//	init_fault_dpwms();
+	init_fault_dpwms();
 
 	//Initialize over current protection
-	//init_sec_ocp();
+	init_sec_ocp();
 	//Initialize cycle by cycle current limit
-	//init_ipri_cycle_by_cycle();
+	init_ipri_cycle_by_cycle();
 	//Check to see if the last DFLASH erase was interrupted
 	look_for_interrupted_dflash_erase();   //
 	

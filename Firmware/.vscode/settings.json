@@ -2,5 +2,25 @@
     "files.associations": {
         "variables.h": "c",
         "pmbus_common.h": "c"
-    }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#fcb62c",
+        "activityBar.background": "#fcb62c",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#027e54",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#fcb62c",
+        "statusBar.background": "#f1a204",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#bf8003",
+        "statusBarItem.remoteBackground": "#f1a204",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#f1a204",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#f1a20499",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#f1a204"
 }
