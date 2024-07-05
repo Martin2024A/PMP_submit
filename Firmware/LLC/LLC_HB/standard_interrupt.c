@@ -346,7 +346,7 @@ enough time for the bias to power up and stabilize prior to attempting any turn 
 
 	    configure_dpwm_timing();
 //6. 
-	     if(ABOVE_VIN_ON_LIMIT)
+	    //  if(ABOVE_VIN_ON_LIMIT)
 	    {
 	        count =0;
 
@@ -549,20 +549,15 @@ void handle_regulation_state(void)
 
 	//is large enough to operate.
 //7. disable VIN_OFF_LIMIT
-// 	if ((!PSON) || BELOW_VIN_OFF_LIMIT)
-// //	if (!PSON)
-// 	{
-// 		transition_to_idle_state();
-// 	}
-// 	else 
-	if (BELOW_VIN_OFF_LIMIT)
+	if ((!PSON) || BELOW_VIN_OFF_LIMIT)
 //	if (!PSON)
 	{
-		gpio_dpwm_off();
+		transition_to_idle_state();
 	}
 	else 
+
 	{
-		gpio_dpwm_on();
+
 		//Check for and handle any faults
 	    handle_faults();
 		//Check for and handle and warnings
