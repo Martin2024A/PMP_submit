@@ -345,7 +345,8 @@ enough time for the bias to power up and stabilize prior to attempting any turn 
 // Open loop to start up
 
 	    configure_dpwm_timing();
-	    if(ABOVE_VIN_ON_LIMIT)
+//6. 
+	     if(ABOVE_VIN_ON_LIMIT)
 	    {
 	        count =0;
 
@@ -365,7 +366,7 @@ enough time for the bias to power up and stabilize prior to attempting any turn 
 	}
 }
 
-
+// 5. disable VIN_OFF_LIMIT
 void handle_ramp_up_state(void)
 {
     Uint32 DAC_temp;
@@ -546,6 +547,7 @@ void handle_regulation_state(void)
 //	}
 
 	//is large enough to operate.
+//7. disable VIN_OFF_LIMIT
 	if ((!PSON) || BELOW_VIN_OFF_LIMIT)
 //	if (!PSON)
 	{
