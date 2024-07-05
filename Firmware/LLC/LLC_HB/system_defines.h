@@ -234,8 +234,8 @@ the original units of the transition rate do not include it.
 #define OC_SHUTDOWN_SLOW (adc_values.io_sense > 70)
 
 
-
-#define PGOOD_ON     (adc_values_avg.vo_sense  > pmbus_dcdc_config_translated[0].pgood_on_limit)
+// 3. ¹ØµôPGOOD_ONÅÐ¶Ï
+#define PGOOD_ON     1 //(adc_values_avg.vo_sense  > pmbus_dcdc_config_translated[0].pgood_on_limit)
 #define PGOOD_OFF    (adc_values_avg.vo_sense  < pmbus_dcdc_config_translated[0].pgood_off_limit)
 
 #define ADC12_VOUT_SCALER_MANTISSA  (19065)

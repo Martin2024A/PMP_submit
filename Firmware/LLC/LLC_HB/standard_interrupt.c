@@ -372,14 +372,15 @@ void handle_ramp_up_state(void)
     Uint32 DAC_temp;
     Uint32 interrupt_temp;
     //Check for and handle any faults
-    if ((!PSON) || BELOW_VIN_OFF_LIMIT)
-    {
+    // if ((!PSON) || BELOW_VIN_OFF_LIMIT)
+    // {
 
-        //Check to see if PSON is still valid. If no go to idle.
-        transition_to_idle_state();
-    }
+    //     //Check to see if PSON is still valid. If no go to idle.
+    //     transition_to_idle_state();
+    // }
 
-    else if(FeCtrl0Regs.RAMPSTAT.bit.RAMP_COMP_INT_STATUS == 1)//Ramp is completed
+    // else 
+	if(FeCtrl0Regs.RAMPSTAT.bit.RAMP_COMP_INT_STATUS == 1)//Ramp is completed
     {
         DAC_temp = FeCtrl0Regs.RAMPDACEND.bit.RAMP_DAC_VALUE;   //Move the DACEND value
         FeCtrl0Regs.EADCDAC.bit.DAC_VALUE = DAC_temp;           //To now be the DAC value
@@ -548,18 +549,24 @@ void handle_regulation_state(void)
 
 	//is large enough to operate.
 //7. disable VIN_OFF_LIMIT
-	if ((!PSON) || BELOW_VIN_OFF_LIMIT)
+// 	if ((!PSON) || BELOW_VIN_OFF_LIMIT)
+// //	if (!PSON)
+// 	{
+// 		transition_to_idle_state();
+// 	}
+// 	else 
+	if (BELOW_VIN_OFF_LIMIT)
 //	if (!PSON)
 	{
-		transition_to_idle_state();
+		gpio_dpwm_off();
 	}
 	else 
 	{
-
+		gpio_dpwm_on();
 		//Check for and handle any faults
 	    handle_faults();
 		//Check for and handle and warnings
-		handle_warnings();
+		// handle_warnings();
 		if(period_change_enable == 1)
 		{
 		    period_change();
@@ -655,7 +662,7 @@ void standard_interrupt(void)
 
 
     handle_standard_interrupt_global_tasks();
-    handle_faults();
+    // handle_faults();
 
 	switch (supply_state)
 	{
@@ -674,16 +681,16 @@ void standard_interrupt(void)
 	case STATE_REGULATED:
 		handle_regulation_state();
 		break;
-	case STATE_VOUT_TRANSITION:
-		handle_vout_transition_state();
-		break;
+	// case STATE_VOUT_TRANSITION:
+	// 	handle_vout_transition_state();
+	// 	break;
 
-	case STATE_HICCUP:
-		handle_hiccup_state();
-		break;
-	case STATE_FAULT:
-		handle_fault_state();
-		break;
+	// case STATE_HICCUP:
+	// 	handle_hiccup_state();
+	// 	break;
+	// case STATE_FAULT:
+	// 	handle_fault_state();
+	// 	break;
 	}
 
 #if ( UCD3138 | UCD3138064 |UCD3138A64 | UCD3138128 )

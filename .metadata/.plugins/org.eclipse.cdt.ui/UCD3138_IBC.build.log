@@ -130,7 +130,7 @@ Finished building: "../software_interrupt_wrapper.c"
 Building file: "../standard_interrupt.c"
 Invoking: ARM Compiler
 "D:/APP/CCS/ccs/tools/compiler/ti-cgt-arm_5.2.9/bin/armcl" -mv4 --code_state=32 --abi=ti_arm9_abi -O2 --include_path="C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Device/UCD3138A/Header" --include_path="C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus" --include_path="C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/LLC/LLC_HB/" --include_path="D:/APP/CCS/ccs/tools/compiler/ti-cgt-arm_5.2.9/include" -g --preproc_with_comment --preproc_with_compile --define=UCD3138A=1 --diag_warning=225 --display_error_number -k --pp_directory="C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/LLC/LLC_HB/UCD3138A"  "../standard_interrupt.c"
-"../standard_interrupt.c", line 372: warning #179-D: variable "interrupt_temp" was declared but never referenced
+"../standard_interrupt.c", line 373: warning #179-D: variable "interrupt_temp" was declared but never referenced
 Finished building: "../standard_interrupt.c"
  
 Building file: "../store_restore_functions.c"

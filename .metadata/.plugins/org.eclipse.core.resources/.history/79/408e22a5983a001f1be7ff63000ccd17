@@ -1,0 +1,116 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../UART_Auto_Baud.c \
+../configuration_functions.c \
+../constants.c \
+../cyclone_global_variables_defs.c \
+../fault_handler.c \
+../flash.c \
+../gpio.c \
+../init_adc12.c \
+../init_cpcc.c \
+../init_current_sharing.c \
+../init_dpwms.c \
+../init_fault_mux.c \
+../init_filters.c \
+../init_front_ends.c \
+../init_loop_mux.c \
+../init_miscellaneous.c \
+../init_watchdog.c \
+../interrupts.c \
+../main.c \
+../pmbus_topology.c \
+../scale.c \
+../software_interrupt.c \
+../software_interrupt_wrapper.c \
+../standard_interrupt.c \
+../store_restore_functions.c \
+../uart.c 
+
+OBJS += \
+./UART_Auto_Baud.obj \
+./configuration_functions.obj \
+./constants.obj \
+./cyclone_global_variables_defs.obj \
+./fault_handler.obj \
+./flash.obj \
+./gpio.obj \
+./init_adc12.obj \
+./init_cpcc.obj \
+./init_current_sharing.obj \
+./init_dpwms.obj \
+./init_fault_mux.obj \
+./init_filters.obj \
+./init_front_ends.obj \
+./init_loop_mux.obj \
+./init_miscellaneous.obj \
+./init_watchdog.obj \
+./interrupts.obj \
+./main.obj \
+./pmbus_topology.obj \
+./scale.obj \
+./software_interrupt.obj \
+./software_interrupt_wrapper.obj \
+./standard_interrupt.obj \
+./store_restore_functions.obj \
+./uart.obj 
+
+OBJS__QUOTED += \
+"UART_Auto_Baud.obj" \
+"configuration_functions.obj" \
+"constants.obj" \
+"cyclone_global_variables_defs.obj" \
+"fault_handler.obj" \
+"flash.obj" \
+"gpio.obj" \
+"init_adc12.obj" \
+"init_cpcc.obj" \
+"init_current_sharing.obj" \
+"init_dpwms.obj" \
+"init_fault_mux.obj" \
+"init_filters.obj" \
+"init_front_ends.obj" \
+"init_loop_mux.obj" \
+"init_miscellaneous.obj" \
+"init_watchdog.obj" \
+"interrupts.obj" \
+"main.obj" \
+"pmbus_topology.obj" \
+"scale.obj" \
+"software_interrupt.obj" \
+"software_interrupt_wrapper.obj" \
+"standard_interrupt.obj" \
+"store_restore_functions.obj" \
+"uart.obj" 
+
+C_SRCS__QUOTED += \
+"../UART_Auto_Baud.c" \
+"../configuration_functions.c" \
+"../constants.c" \
+"../cyclone_global_variables_defs.c" \
+"../fault_handler.c" \
+"../flash.c" \
+"../gpio.c" \
+"../init_adc12.c" \
+"../init_cpcc.c" \
+"../init_current_sharing.c" \
+"../init_dpwms.c" \
+"../init_fault_mux.c" \
+"../init_filters.c" \
+"../init_front_ends.c" \
+"../init_loop_mux.c" \
+"../init_miscellaneous.c" \
+"../init_watchdog.c" \
+"../pmbus_topology.c" \
+"../scale.c" \
+"../software_interrupt_wrapper.c" \
+"../store_restore_functions.c" \
+"../uart.c" 
+
+

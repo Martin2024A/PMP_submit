@@ -227,6 +227,7 @@ void init_variables(void)
 
 }
 
+//2. 关掉FIQ和IRQ的FAULT中断
 void init_interrupt(void)
 {
 	//Threshold to send the pwm low. Approx 10KHz. by spec.64ns clock period
@@ -244,11 +245,11 @@ void init_interrupt(void)
 	//cleared. Added here by ZCS feature
 	FAULTMUXINTSTAT_value =	FaultMuxRegs.FAULTMUXINTSTAT.all;
 	//Configure IRQ
-	write_reqmask(CIMINT_ALL_PWM2_COMP | CIMINT_ALL_DPWM0 | CIMINT_ALL_FAULT_MUX);
+	write_reqmask(CIMINT_ALL_PWM2_COMP | CIMINT_ALL_DPWM0 );// CIMINT_ALL_FAULT_MUX);
 	//Configure FIQ
-	write_firqpr(CIMINT_ALL_DPWM0 | CIMINT_ALL_FAULT_MUX);
+	// write_firqpr(CIMINT_ALL_DPWM0 | CIMINT_ALL_FAULT_MUX);
 	//Enable interrupts
-	enable_fast_interrupt();
+	// enable_fast_interrupt();
 	enable_interrupt();
 }
 

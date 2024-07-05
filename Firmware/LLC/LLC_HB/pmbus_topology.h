@@ -227,8 +227,8 @@ typedef struct
 #define IIN_OC_WARN_LIMIT	(3)
 #define PGOOD_ON_LIMIT		(5888)
 #define PGOOD_OFF_LIMIT		(5632)
-#define VIN_ON_LIMIT		(26) // Original
-#define VIN_OFF_LIMIT		(23) // Original
+#define VIN_ON_LIMIT		(5) // Original
+#define VIN_OFF_LIMIT		(2) // Original
 #define TON_RISE 			(200) //50ms
 #define VOUT_0_TRAN 		(1) //( 0xA58) //(0x9B33)
 #define DEADTIME1			((int)(DT1 / TDPWM + 0.5))    // Multiplied by 4  //

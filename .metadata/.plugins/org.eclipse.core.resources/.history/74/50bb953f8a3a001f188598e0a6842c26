@@ -1,0 +1,28 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_command_indexes.c \
+C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_common.c \
+C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_driver.c 
+
+OBJS += \
+./Driver/Pmbus/pmbus_command_indexes.obj \
+./Driver/Pmbus/pmbus_common.obj \
+./Driver/Pmbus/pmbus_driver.obj 
+
+OBJS__QUOTED += \
+"Driver\Pmbus\pmbus_command_indexes.obj" \
+"Driver\Pmbus\pmbus_common.obj" \
+"Driver\Pmbus\pmbus_driver.obj" 
+
+C_SRCS__QUOTED += \
+"C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_command_indexes.c" \
+"C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_common.c" \
+"C:/Users/Martin/Desktop/2024.4.19/UCDIBCFirmware/Firmware/Driver/Pmbus/pmbus_driver.c" 
+
+
